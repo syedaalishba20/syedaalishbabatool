@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="shortcut icon" href="tcss.png" type="image/x-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <title>Dashboard</title>
+</head>
+
+<body class="bg-white ">
+
+  
+  <div class="flex h-screen">
+  <!-------------Sidebar ---------------------->
+  <aside class="w-20 bg-slate-900 text-white flex flex-col p-4">
+    <h2 class="text-2xl font-bold mb-6"></h2>
+    <nav class="space-y-4">
+
+
+
+      <img src="tcss.png" class="flex items-center space-x-2 hover:bg-gray-700  w-20 h-16">
+        <span class="material-icons"></span>
+        <span></span>
+
+      </img>
+      <a href="#" class="flex items-center space-x-2 hover:bg-gray-700 p-2  rounded">
+        <span class="material-icons"></span>
+        <span><i class="fa-regular fa-file"></i></span>
+      </a>
+      <a href="#" class="flex items-center space-x-2 hover:bg-gray-700 p-2 rounded">
+        <span class="material-icons"></span>
+        <span><i class="fa-regular fa-envelope"></i></span>
+      </a>
+      <a href="#" class="flex items-center space-x-2 hover:bg-gray-700 p-2 rounded">
+        <span class="material-icons"></span>
+        <span><i class="fa-solid fa-bars"></i></span>
+
+      </a>
+ <a href="#" class="flex items-center space-x-2 hover:bg-gray-700 p-2 rounded">
+        <span class="material-icons"></span>
+        <span><i class="fa-solid fa-bookmark"></i></span>
+
+      </a>
+      
+      <a href="#" class="flex items-center space-x-2 hover:bg-gray-700 pt-[570px]  rounded">
+        <span class="material-icons"></span>
+        <span><i class="fa-solid fa-gear"></i></span>
+
+      </a>
+     
+    </nav>
+  </aside>
+    
+    <!-- ----------- Main   ------------->
+    <div class="flex-1 flex flex-col">
+      
+      <header class="flex items-center justify-between p-4 bg-gray-100 shadow">
+        <div> 
+         
+          <input type="text" placeholder="  🔍 Search..."  class="pl-10 bg-gray-100">
+        </div>
+        
+      <!------- <div class="flex items-center space-x-4">
+          <button class="p-2 rounded bg-gray-100 ml-72">
+            <span class="material-icons"></span>
+            <i class="fa-solid fa-bell"></i>
+            
+          </button>
+          <button class="p-2 rounded hover:bg-gray-100  ml-72">
+            <span class="material-icons"></span>
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          </button>
+          <div class="flex items-center space-x-4">
+            <img src="g5.avif" alt="Profile" class="w-10 h-10 rounded-full">
+            <i class="fa-solid fa-chevron-down">  </i>
+            <div class="flex flex-col">
+              <span></span>
+              <p class="text-gray-500"></p>
+            </div>
+          </div>---> 
+          <div class="flex flex-shrink-0 items-center ml-auto">
+            <button class="inline-flex items-center p-2 hover:bg-gray-100 focus:bg-gray-100 rounded-lg">
+              <span class="sr-only">User Menu</span>
+              <div class="hidden md:flex md:flex-col md:items-end md:leading-tight">
+                <span class="font-semibold">Taylor Bailey</span>
+                <span class="text-sm text-gray-600">Lecturer</span>
+              </div>
+              <span class="h-12 w-12 ml-2 sm:ml-3 mr-2 bg-gray-100 rounded-full overflow-hidden">
+                <img src="g5.avif" alt="user profile photo" class="h-full w-full object-cover">
+              </span>
+              <svg aria-hidden="true" viewBox="0 0 20 20" fill="currentColor" class="hidden sm:block h-6 w-6 text-gray-300">
+              </svg> 
+            </button>
+    
+            <!-- notification bell -->
+            <div class="border-l pl-3 ml-3 space-x-1">
+              <button class="relative p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-600 focus:bg-gray-100 focus:text-gray-600 rounded-full">
+                <span class="sr-only">Notifications</span>
+                <span class="absolute top-0 right-0 h-2 w-2 mt-1 mr-2 bg-red-500 rounded-full"></span>
+                <span class="absolute top-0 right-0 h-2 w-2 mt-1 mr-2 bg-red-500 rounded-full animate-ping"></span>
+                <i class="fa-regular fa-bell"></i>
+              </button>
+    
+              <!-- log out button -->
+              <button class="relative p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-600 focus:bg-gray-100 focus:text-gray-600 rounded-full">
+                <span class="sr-only">Log out</span>
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </button>
+              </div>
+              
+        </div>
+      </header>
+      <!-- -----------  dashboard   ------------->
+      <section class="p-6 bg-gray-100 shadow my-4">
+        <h1 class="text-3xl font-bold">Dashboard</h1>
+        <p class="text-gray-600">Mobile UX/UI Design course</p>
+        <div class="mt-4 space-x-2">
+          <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"><i class="fa-solid fa-pencil"></i>     Manage Dashboard</button>
+ 
+
+         
+          <button class="bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600"> ✚ Create New Dashboard</button>
+        </div>
+      </section>
+
+
+
+
+      <!--  ----------- Cards ----------- -->
+      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-6">
+        <div class="bg-gray-100 shadow p-4 rounded text-center">
+          <i class="fa-solid fa-user text-3xl text-gray-700"></i>
+          <h2 class="text-lg font-bold">Students</h2>
+          <p class="text-2xl font-bold text-blue-500">62</p>
+        </div>
+        <div class="bg-gray-100 shadow p-4 rounded text-center">
+          <i class="fa-solid fa-chart-line text-3xl text-gray-700"></i>
+          <h2 class="text-lg font-bold">Average Mark</h2>
+          <p class="text-2xl font-bold text-green-500">6.8</p>
+        </div>
+        <div class="bg-gray-100 shadow p-4 rounded text-center">
+          <i class="fa-solid fa-thumbs-down  text-3xl text-gray-700"></i>
+          <h2 class="text-lg font-bold">Underperforming</h2>
+          <p class="text-2xl font-bold text-red-500">9 (14%)</p>
+        </div>
+        <div class="bg-gray-100 shadow p-4 rounded text-center">
+          <i class="fa-solid fa-book  text-3xl text-gray-700"></i>
+          <h2 class="text-lg font-bold">Finished Homeworks</h2>
+          <p class="text-2xl font-bold text-indigo-500">83%</p>
+        </div>
+      </section>
+
+
+      <section class="grid grid-cols-1 lg:grid-cols-3 gap-4 p-6">
+        <!-- ----------- Chart 1  ------------->
+       
+
+
+
+
+          <div>
+       
+            <h2 class="text-xl font-bold mb-4 text-center bg-grey-100">The number of applied and left students per month</h2>
+            
+            
+            <div class="bg-gray-100 shadow p-4 rounded h-52 text-center flex items-center justify-center ">
+              <p class="text-gray-400 ">chart</p>
+            </div>
+         
+          
+          <!-- -----------  ------------>
+          <div class="grid grid-cols-2 gap-4 mt-4">
+           
+            <div class="bg-gray-100 h-24 flex items-center justify-center rounded shadow text-xl">
+              <i class="fa-solid fa-graduation-cap text-3xl text-gray-700"></i>
+              <p class="text-gray-500">50</p>
+            </div>
+            <!------------------------>
+          
+            <div class="bg-gray-100 h-24 flex items-center justify-center rounded shadow text-xl">
+              <i class="fa-solid fa-user text-3xl text-gray-700"></i> <p class="text-gray-500">160</p>
+            </div>
+          </div>
+        </div>
+      
+        <!-----------   ----------->
+        <div class="bg-gray-100 shadow p-4 rounded text-center">
+          <h2 class="text-xl font-bold mb-4">Students by Average Mark</h2>
+          <div class="space-y-2">
+            <div class="flex items-center justify-between p-2 bg-gray-50 rounded shadow-sm">
+              <div class="flex items-center space-x-2">
+                <img src="g1.avif" alt="Student" class="w-10 h-10 rounded-full">
+                <span>Watson Annette</span>
+              </div>
+              <span class="text-gray-700 font-bold">9.3</span>
+            </div>
+            <div class="flex items-center justify-between p-2 bg-gray-50 rounded shadow-sm">
+              <div class="flex items-center space-x-2">
+                <img src="g3.jpg" alt="Student" class="w-10 h-10 rounded-full">
+                <span>Steward Calvin</span>
+              </div>
+              <span class="text-gray-700 font-bold">8.9</span>
+            </div>
+            <div class="flex items-center justify-between p-2 bg-gray-50 rounded shadow-sm">
+              <div class="flex items-center space-x-2">
+                <img src="g2.jpg" alt="Student" class="w-10 h-10 rounded-full">
+                <span>Alexa Den</span>
+              </div>
+              <span class="text-gray-700 font-bold">8.7</span>
+            </div>
+            <div class="flex items-center justify-between p-2 bg-gray-50 rounded shadow-sm">
+              <div class="flex items-center space-x-2">
+                <img src="g4.jpg" alt="Student" class="w-10 h-10 rounded-full">
+                <span>Ralph Richards</span>
+              </div>
+              <span class="text-gray-700 font-bold">8.5</span>
+            </div>
+          </div>
+        </div>
+      
+        <!----------- Chart 2 ----------->
+        <div class="bg-gray-100 shadow p-4 rounded h-74 text-center">
+         
+          <h2 class="text-xl font-bold mb-4">Students by Type of Studying</h2>
+        
+          <div class="bg-gray-100 shadow p-4 rounded h-52 text-center flex items-center justify-center ">
+  <p class="text-gray-400 ">chart</p>
+</div>
+        </div>
+        
+      </section>
+    
+<!---------------------<div class="flex items-center justify-center h-full">
+            <p class="text-gray-400">Chart </p>
+          </div>---------------------------------->
+
+
+
+    
+      
+
+      <!----------- footer ----------->
+   
+      
+      <footer class="p-4 text-center bg-gray-300">
+        <p>Recreated on Codepen with Tailwind CSS</p>
+      </footer>
+    </div>
+  </div>
+   <!----------- ----------->
+</body>
+</html>
+
